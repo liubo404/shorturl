@@ -21,7 +21,7 @@
 - service 业务逻辑
 - dao 数据访问 
 
-项目技术栈:springboot+mybatis+junit+jcoco
+项目技术栈:springboot+mybatis+h2databse+junit+jcoco
 
 启动类：ShortUrlApplication.java
 
