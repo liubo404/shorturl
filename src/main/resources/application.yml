@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    #H2 memory database memory mode connection configuration library name: mybatis
+    url: jdbc:h2:mem:mybatis
+    #Initialize data table DDL
+    schema: classpath:sql/init.sql
+    #Initialize data DML
+    data: classpath:sql/data.sql
+  h2:
+    #Enable console access default false
+    console:
+      enabled: true
+      settings:
+        #Enable H2 console trace to facilitate debugging default false
+        trace: true
+        #Allow console remote access default false
+        web-allow-others: true
+      #H2 access path context
+      path: /h2-console

@@ -1,0 +1,17 @@
+@startuml
+actor user
+
+
+node short_url_service{
+
+ component service
+ component dao
+ database h2
+
+ controller --> service
+ service --> dao
+ dao --> h2
+}
+user => short_url_service: query short url by long url
+user -> short_url_service: query long url by short url
+@enduml
