@@ -26,4 +26,44 @@
 启动类：ShortUrlApplication.java
 
 
+```
+├── pom.xml
+├── README.md
+├── short_url.plantuml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── ot
+    │   │       └── devops
+    │   │           ├── controller
+    │   │           │   └── ShortUrlController.java
+    │   │           ├── DAO
+    │   │           │   └── ShortUrlDAO.java  数据访问
+    │   │           ├── DO
+    │   │           │   └── ShortUrlDO.java   实体
+    │   │           ├── DTO
+    │   │           │   └── ShortUrlDTO.java  查询dto
+    │   │           ├── service
+    │   │           │   ├── ShortUrlServiceImpl.java  业务逻辑
+    │   │           │   └── ShortUrlService.java
+    │   │           ├── ShortUrlApplication.java 启动类
+    │   │           └── utils
+    │   │               ├── ShortUrlUtil.java  短链码生成工具
+    │   │               └── UrlConstants.java  常量
+    │   └── resources
+    │       ├── application.yml
+    │       └── sql
+    │           ├── data.sql 预设数据
+    │           └── init.sql 建表
+    └── test
+        └── java
+            └── ot
+                └── devops
+                    ├── controller
+                    │   └── ShortUrlControllerTest.java 集成测试 
+                    ├── DAO
+                    │   └── ShortUrlDAOTest.java  单元测试
+                    └── service
+                        └── ShortUrlServiceTest.java 单元测试
+```
   
